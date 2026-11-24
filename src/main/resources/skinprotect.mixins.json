@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.skinprotect.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "PlayerSkinMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
