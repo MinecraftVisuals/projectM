@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "skinprotect",
+  "version": "${version}",
+  "name": "Skin Protect",
+  "description": "Client-side mod that always shows your own player as Steve.",
+  "authors": [],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.skinprotect.SkinProtectClient"
+    ]
+  },
+  "mixins": [
+    "skinprotect.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
