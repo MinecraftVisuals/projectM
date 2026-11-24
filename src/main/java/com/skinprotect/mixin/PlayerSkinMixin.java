@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(AbstractClientPlayerEntity.class)
 public class PlayerSkinMixin {
 
-    @Inject(method = "getSkinTextures", at = @At("HEAD"), cancellable = true)
+    @Inject(method = "getSkin", at = @At("HEAD"), cancellable = true)
     private void skinprotect$forceSteve(CallbackInfoReturnable<SkinTextures> cir) {
         // Only replace the skin of the local player (you), nobody else
         if ((Object) this == MinecraftClient.getInstance().player) {
